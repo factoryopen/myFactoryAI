@@ -1,0 +1,47 @@
+import request from '@/utils/request'
+
+// 查询基本工序管理列表
+export function listProcess(query) {
+    return request({
+        url: '/eng/process/list',
+        method: 'get',
+        params: query
+    })
+}
+
+// 查询基本工序管理详细
+export function getProcess(id) {
+    return request({
+        url: '/eng/process/' + id,
+        method: 'get'
+    })
+}
+
+// 新增基本工序管理
+export function addProcess(data) {
+    return request({
+        url: '/eng/process',
+        method: 'post',
+        data: data
+    })
+}
+
+// 修改基本工序管理
+export function updateProcess(data) {
+    return request({
+        url: '/eng/process',
+        method: 'put',
+        data: data
+    })
+}
+
+// 删除基本工序管理
+export function delProcess(id) {
+    return request({
+        url: '/eng/process/' + id,
+        method: 'delete'
+    })
+}
+
+
+

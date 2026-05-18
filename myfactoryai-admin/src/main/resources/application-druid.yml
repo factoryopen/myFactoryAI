@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      master:
+        url: jdbc:mysql://localhost:3306/myfactoryai-free?useSSL=true&serverTimezone=GMT%2B8
+        username: root
+        password: factoryopen
+        driverClassName: com.mysql.cj.jdbc.Driver
+      slave:
+        enabled: false
+        driverClassName:
+        url:
+        username:
+        password:
+      initialSize: 10
+      minIdle: 10
+      maxActive: 40
+      maxWait: 60000
+      connectTimeout: 30000
+      socketTimeout: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      maxEvictableIdleTimeMillis: 900000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      webStatFilter:
+        enabled: true
+      statViewServlet:
+        enabled: true
+        allow:
+        url-pattern: /druid/*
+        login-username: myfactoryai
+        login-password: factoryopen.net
+        url: http://localhost:8080/druid/index.html
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
