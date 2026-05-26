@@ -53,7 +53,7 @@ public class MyFactoryAIApplication {
             System.out.println(CYAN + BOLD + asciiArt + RESET);
             System.out.println(CYAN + BOLD + slogan + RESET);
             System.out.println(YELLOW + BOLD + "═════════════════════════════════════════════════════════════════════════════════════════════════════════" + RESET);
-            System.out.println(GREEN + BOLD + "  🚀 myFactoryAI 系统已成功启动  |  v1.0.0  |  自主Agent引擎" + RESET);
+            System.out.println(GREEN + BOLD + "  🚀 myFactoryAI 系统已成功启动  |  v1.0.0  |  努力进化的自主Agent引擎" + RESET);
             System.out.println(CYAN + "  🌐 官网: " + BOLD + "www.factoryopen.net" + RESET);
             System.out.println(CYAN + "  🌐 文档: " + BOLD + "http://localhost:8080/swagger-ui/index.html" + RESET + CYAN + "  |  Druid: http://localhost:8080/druid/index.html" + RESET);
             System.out.println(CYAN + "  🌐 微信: " + BOLD + "factoryopen" + RESET);
