@@ -255,12 +255,12 @@
         <!-- 创建slaver.openLeadsVisiting对话框 -->
         <el-dialog :title="title" class="dialogConfig" :visible.sync="openLeadsVisiting" width="500px" append-to-body>
             <el-form ref="formLeadsVisiting" :model="formLeadsVisiting" :rules="rulesLeadsVisiting" label-width="140px" :inline-message="true">
-                    <el-form-item prop="leadId" class="marginBottom0">
-                      <span slot="label">
-                          <span class="fontSize12"><strong>线索</strong></span>
-                      </span>
-                    <el-input class="inputWidth" v-model="formLeadsVisiting.leadId" placeholder="请输入线索" size="mini" disabled="true"/>
-                  </el-form-item>
+<!--                  <el-form-item prop="leadId" class="marginBottom0">-->
+<!--                    <span slot="label">-->
+<!--                        <span class="fontSize12"><strong>线索</strong></span>-->
+<!--                    </span>-->
+<!--                    <el-input class="inputWidth" v-model="formLeadsVisiting.leadId" placeholder="请输入线索" size="mini" disabled="true"/>-->
+<!--                  </el-form-item>-->
                    <el-form-item prop="seqNo" class="marginBottom0">
                       <span slot="label">
                           <span class="fontSize12"><strong>项序</strong></span>
@@ -297,13 +297,13 @@
                       <span slot="label">
                           <span class="fontSize12"><strong>拜访记录</strong></span>
                       </span>
-                      <el-input class="inputWidth" v-model="formLeadsVisiting.description" placeholder="请输入拜访记录" size="mini" />
+                      <el-input type="textarea" :rows="10" class="inputWidth" v-model="formLeadsVisiting.description" placeholder="请输入拜访记录" size="mini" />
                   </el-form-item>
                    <el-form-item prop="remark" class="marginBottom0">
                       <span slot="label">
                           <span class="fontSize12"><strong>备注</strong></span>
                       </span>
-                      <el-input class="inputWidth" v-model="formLeadsVisiting.remark" placeholder="请输入备注" size="mini" />
+                      <el-input type="textarea" :rows="2" class="inputWidth" v-model="formLeadsVisiting.remark" placeholder="请输入备注" size="mini" />
                   </el-form-item>
                 </el-form>
             <div slot="footer" class="dialog-footer">

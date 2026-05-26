@@ -472,13 +472,13 @@
                   </el-form-item>
                    <el-form-item prop="standardQuantity" class="marginBottom0">
                       <span slot="label">
-                          <span class="fontSize12"><strong>标准用量</strong></span>
+                          <span class="fontSize12"><strong>标准用量(x.y)</strong></span>
                       </span>
                       <el-input class="inputWidth" v-model="formCategoryBom.standardQuantity" placeholder="请输入标准用量" size="mini" />
                   </el-form-item>
                    <el-form-item prop="lossRate" class="marginBottom0">
                       <span slot="label">
-                          <span class="fontSize12"><strong>损耗率</strong></span>
+                          <span class="fontSize12"><strong>损耗率(0-1)</strong></span>
                       </span>
                       <el-input class="inputWidth" v-model="formCategoryBom.lossRate" placeholder="请输入损耗率" size="mini" />
                   </el-form-item>

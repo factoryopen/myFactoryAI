@@ -72,7 +72,7 @@
                 </span>
                 <el-select v-model="queryParams.sourceType" placeholder="请选择来源类型" clearable size="mini" class="searchInput">
                     <el-option
-                        v-for="dict in dict.type.crm_chance_sourcetype"
+                        v-for="dict in dict.type.cha_lead_sourcetype"
                         :key="dict.value"
                         :label="dict.label"
                         :value="dict.value"
@@ -267,7 +267,7 @@
                     </span>
                     <el-select class="inputWidth" v-model="form.sourceType" placeholder="请选择来源类型" size="mini" >
                       <el-option
-                          v-for="dict in dict.type.crm_chance_sourcetype"
+                          v-for="dict in dict.type.cha_lead_sourcetype"
                           :key="dict.value"
                           :label="dict.label"
                           size="mini"
@@ -321,7 +321,7 @@ import { listUser} from "@/api/system/user";
 
 export default {
     name: "Leads",
-    dicts: ['cha_status_lead', 'crm_chance_sourcetype'],
+    dicts: ['cha_status_lead', 'cha_lead_sourcetype'],
     data() {
       return {
         // 遮罩层
@@ -447,51 +447,6 @@ export default {
           this.loading = false;
         });
       },
-
-        reset (){
-            this.form = {
-              id: null,
-              billNo: null,
-              status: null,
-              customerId: null,
-              description: null,
-              contact: null,
-              phone: null,
-              sourceType: null,
-              wechat: null,
-              email: null,
-              address: null,
-              salesId: null,
-              remark: null,
-              createBy: null,
-              createTime: null,
-              updateBy: null,
-              updateTime: null
-            };
-            this.resetForm("form");
-        },
-        reset (){
-            this.form = {
-              id: null,
-              billNo: null,
-              status: null,
-              customerId: null,
-              description: null,
-              contact: null,
-              phone: null,
-              sourceType: null,
-              wechat: null,
-              email: null,
-              address: null,
-              salesId: null,
-              remark: null,
-              createBy: null,
-              createTime: null,
-              updateBy: null,
-              updateTime: null
-            };
-            this.resetForm("form");
-        },
         reset (){
             this.form = {
               id: null,

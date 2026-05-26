@@ -88,6 +88,20 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/',
+    component: Layout,
+    hidden: true,
+    redirect: 'noredirect',
+    children: [
+      {
+        path: 'aboutMyFAI',
+        component: () => import('@/views/aboutMyFAI'),
+        name: 'aboutMyFAI',
+        meta: {title: 'MyFAI..', icon: 'el-icon-info'}
+      }
+    ]
+  },
   // {
   //   path: '/aiChat',
   //   component: Layout,                     // 使用 Layout 布局

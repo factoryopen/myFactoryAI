@@ -20,6 +20,13 @@
           </a>
         </div>
 
+        <!-- 新增：关于我 链接 -->
+        <div class="right-menu-item">
+          <router-link to="/aboutMyFAI" style="text-decoration: none; color: #409EFF;">
+            <i class="el-icon-info" /> MyFAI..
+          </router-link>
+        </div>
+
         <!--        <el-tooltip content="源码地址" effect="dark" placement="bottom">-->
         <!--          <ruo-yi-git id="ruoyi-git" class="right-menu-item hover-effect" />-->
         <!--        </el-tooltip>-->
