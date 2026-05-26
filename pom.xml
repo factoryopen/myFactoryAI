@@ -6,7 +6,7 @@
 
     <groupId>net.factoryopen.myfactoryai</groupId>
     <artifactId>myfactoryai</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>myfactoryai</name>
@@ -14,7 +14,7 @@
     <description>myfactoryai</description>
 
     <properties>
-        <myfactoryai.version>1.0.0</myfactoryai.version>
+        <myfactoryai.version>1.0.1</myfactoryai.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>21</java.version>
