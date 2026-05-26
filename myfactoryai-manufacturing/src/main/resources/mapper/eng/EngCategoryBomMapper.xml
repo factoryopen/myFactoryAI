@@ -92,7 +92,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="standardQuantity != null">#{standardQuantity},</if>
             <if test="lossRate != null">#{lossRate},</if>
             <if test="consumeType != null">#{consumeType},</if>
-            <if test="calculateType != null and calculateType != ''">#{calculate_type},</if>
+            <if test="calculateType != null and calculateType != ''">#{calculateType},</if>
             <if test="lineId != null">#{lineId},</if>
             <if test="remark != null">#{remark},</if>
             <if test="createBy != null">#{createBy},</if>

@@ -19,13 +19,13 @@ public class BillManagerController {
     private BillManager billManager;
 
     @GetMapping("/{billId}")
-    public String getNextBillno(@PathVariable long billId) {
+    public String getNextBillno(@PathVariable("billId") long billId) {
         String billNo = billManager.getNextBillno(billId);
         return billNo;
     }
 
     @PutMapping("/{billId}")
-    public void updateBillSeq(@PathVariable long billId) {
+    public void updateBillSeq(@PathVariable("billId") long billId) {
         billManager.updateBillSeq(billId);
     }
 

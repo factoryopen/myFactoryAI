@@ -7,7 +7,7 @@
     <parent>
         <groupId>net.factoryopen.myfactoryai</groupId>
         <artifactId>myfactoryai</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
     <artifactId>myfactoryai-manufacturing</artifactId>
 

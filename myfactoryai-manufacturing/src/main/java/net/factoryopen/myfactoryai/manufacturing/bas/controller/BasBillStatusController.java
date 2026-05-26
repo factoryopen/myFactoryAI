@@ -96,7 +96,7 @@ public class BasBillStatusController extends BaseController
 //    @PreAuthorize("@ss.hasPermi('bas:billStatus:remove')")
     @Log(title = "单据状态", businessType = BusinessType.DELETE)
     @DeleteMapping("/{ids}")
-    public AjaxResult remove(@PathVariable Long[] ids)
+    public AjaxResult remove(@PathVariable("ids") Long[] ids)
     {
         return toAjax(basBillStatusService.deleteBasBillStatusByIds(ids));
     }
